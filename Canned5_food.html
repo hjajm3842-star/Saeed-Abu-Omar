@@ -4,24 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بقالة العمدة | المعلبات والمنتجات المعبأة</title>
+    <title>هايبر السلف الصالح | جميع احتياجات البقالة والمنزل</title>
+
+    <meta name="description" content="تسوق مواد البقالة، الخضروات، الأعلاف، ومستحضرات التجميل بأفضل أسعار الجملة في هايبر السلف الصالح.">
+    <meta name="keywords" content="هايبر السلف الصالح, سوبر ماركت, بقالة, مواد غذائية, أعلاف, جملة, منتجات منزلية">
+    <meta name="author" content="بوابة السلف الصالح">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel=" icon " href="icon/Screenshot 2025-10-14 065110 (1).png ">
+
     <style>
-        .card-img-top {
-            height: 180px;
+        /* **إضافة CSS الناقص لثبات الأشرطة وإزاحة المحتوى** */
+        
+        .top-bar {
+            background-color: #3b7640;
+            color: #fff;
+            padding: 5px 0;
+            font-size: 0.9rem;
+            /* **تثبيت الشريط العلوي** */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1031;
+        }
+        
+        .top-bar .phone-link {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .engineer-profile {
+            height: 25px;
+            width: 25px;
             object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            margin-left: 5px;
+        }
+        
+        .engineer-info {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <div class="engineer-info">
+                <img src="imgs/318249797_1192375964964526_8841190463720610151_n.jpg" alt="صورة المهندس محمد" class="engineer-profile">
+                <span>مهندس محمد</span>
+            </div>
+
+            <div class="text-end">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+201001234567" class="phone-link me-2">للطلب والاستفسار: 01142279961</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="fas fa-store"></i> بقالة العمدة
+                <i class="fas fa-store"></i> هايبر السلف الصالح
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,7 +107,11 @@
     <div style="height: 70px;"></div>
 
     <main class="container py-5">
-        <h1 class="text-center mb-5 text-success border-bottom pb-2"><i class="fas fa-boxes"></i> قسم المعلبات والمنتجات المعبأة</h1>
+        <h1 class="text-center mb-1 text-success border-bottom pb-2"><i class="fas fa-boxes"></i> قسم المعلبات والمنتجات المعبأة</h1>
+
+        <p class="text-center lead text-danger fw-bold mb-5">
+            الأسعار التالية هي **أسعار جملة** للمناديب والتجار.
+        </p>
 
         <section class="mb-5">
             <h2 class="text-secondary mb-4 mt-5 border-bottom pb-2"><i class="fas fa-cheese"></i> الأجبان والسمن</h2>
@@ -64,10 +119,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/cheese_prego.jpg" class="card-img-top" alt="جبنة بريجو">
+                        <img src="imgs/01.jpg" class="card-img-top" alt="جبنة بريجو">
                         <div class="card-body">
                             <h5 class="card-title text-success">جبنة بريجو (جميع الأحجام)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -75,10 +130,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/cheese_obour.jpg" class="card-img-top" alt="جبنة عبور لاند">
+                        <img src="imgs/images.jpg" class="card-img-top" alt="جبنة عبور لاند">
                         <div class="card-body">
                             <h5 class="card-title text-success">جبنة عبور لاند (أصناف متنوعة)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -86,10 +141,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/cheese_rhodes.jpg" class="card-img-top" alt="جبنة رودس">
+                        <img src="imgs/unnamed.png" class="card-img-top" alt="جبنة رودس">
                         <div class="card-body">
                             <h5 class="card-title text-success">جبنة رودس</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -97,10 +152,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/ghee_mix.jpg" class="card-img-top" alt="أنواع السمن">
+                        <img src="imgs/160772_W.jpg" class="card-img-top" alt="أنواع السمن">
                         <div class="card-body">
                             <h5 class="card-title text-success">سمنة (الأصيل، الهانم، روابي، عجب)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -108,10 +163,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/butter_baladi.jpg" class="card-img-top" alt="سمنة وجبنة بلدي">
+                        <img src="imgs/107890-الجبن-القريش.webp" class="card-img-top" alt="سمنة وجبنة بلدي">
                         <div class="card-body">
                             <h5 class="card-title text-success">جبنة وسمنة بلدي (جودة ممتازة)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -125,10 +180,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/tuna.jpg" class="card-img-top" alt="تونة">
+                        <img src="imgs/524165_main.avif" class="card-img-top" alt="تونة">
                         <div class="card-body">
                             <h5 class="card-title text-success">تونة قطع (حارة وباردة)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -136,10 +191,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/jam_honey.jpg" class="card-img-top" alt="مربى وعسل">
+                        <img src="imgs/تنزيل.jpg" class="card-img-top" alt="مربى وعسل">
                         <div class="card-body">
                             <h5 class="card-title text-success">مربى (جميع الأنواع) وعسل طبيعي</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -147,10 +202,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/tahini.jpg" class="card-img-top" alt="طحينة وحلاوة طحينية">
+                        <img src="imgs/images (1).jpg" class="card-img-top" alt="طحينة وحلاوة طحينية">
                         <div class="card-body">
                             <h5 class="card-title text-success">طحينة وحلاوة طحينية (طحانية)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -158,10 +213,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/yeast.jpg" class="card-img-top" alt="عسكر أو خميرة">
+                        <img src="imgs/e3a926c8-a92c-41da-acd1-c5b105876d28.__CR0,0,300,300_PT0_SX300_V1___.jpg" class="card-img-top" alt="عسكر أو خميرة">
                         <div class="card-body">
                             <h5 class="card-title text-success">عسكر (خميرة فورية)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -169,10 +224,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/salt.jpg" class="card-img-top" alt="ملح بونو">
+                        <img src="imgs/تنزيل-48.webp" class="card-img-top" alt="ملح بونو">
                         <div class="card-body">
                             <h5 class="card-title text-success">ملح بونو (معبأ)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -180,10 +235,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/sugar.jpg" class="card-img-top" alt="السكر">
+                        <img src="imgs/2023_12_2_19_18_25_590.jpg" class="card-img-top" alt="السكر">
                         <div class="card-body">
                             <h5 class="card-title text-success">سكر معبأ (جميع الأوزان)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -198,10 +253,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/broth.jpg" class="card-img-top" alt="مرقة">
+                        <img src="imgs/81cgsBGHXOL._UF894,1000_QL80_.jpg" class="card-img-top" alt="مرقة">
                         <div class="card-body">
                             <h5 class="card-title text-success">مرقة (مكعبات، فورية، دجاج، خضروات)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -209,10 +264,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/baking_mix.jpg" class="card-img-top" alt="مستلزمات خبز">
+                        <img src="imgs/FB_IMG_1724005930274.webp" class="card-img-top" alt="مستلزمات خبز">
                         <div class="card-body">
                             <h5 class="card-title text-success">مستلزمات حلويات (دريم شانتيه، كيك شيف، فانيليا، كم باودر)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -220,10 +275,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/tea.jpg" class="card-img-top" alt="شاي العروسة">
+                        <img src="imgs/1629718496.jpeg" class="card-img-top" alt="شاي العروسة">
                         <div class="card-body">
                             <h5 class="card-title text-success">شاي العروسة (كبير وصغير)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -231,10 +286,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/biscuits_gum.jpg" class="card-img-top" alt="بسكويت ولبان">
+                        <img src="imgs/images (2).jpg" class="card-img-top" alt="بسكويت ولبان">
                         <div class="card-body">
                             <h5 class="card-title text-success">جميع أنواع البسكويت واللبان</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -248,10 +303,23 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/scourer.jpg" class="card-img-top" alt="سلك مواعين">
+                        <img src="imgs/images (3).jpg" class="card-img-top" alt="سلك مواعين">
                         <div class="card-body">
                             <h5 class="card-title text-success">سلك مواعين (عرض 3 قطع)</h5>
-                            <h4 class="text-primary">السعر: يحدد لاحقاً</h4>
+                            <h4 class="wholesale-price">سعر جملة</h4>
+                            <a href="#" class="btn btn-warning">أضف للسلة</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <img src="imgs/تنزيل.jpg" class="card-img-top" alt="سلك مواعين">
+
+                        <i class="fas fa-soap fa-5x text-success mt-4 mb-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title text-success">صابون غسيل أطباق (جميع الأنواع)</h5>
+                            <h4 class="wholesale-price">سعر جملة</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>

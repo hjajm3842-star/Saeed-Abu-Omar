@@ -4,24 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بقالة العمدة | الحبوب والبقوليات</title>
+    <title>هايبر السلف الصالح | جميع احتياجات البقالة والمنزل</title>
+
+    <meta name="description" content="تسوق مواد البقالة، الخضروات، الأعلاف، ومستحضرات التجميل بأفضل أسعار الجملة في هايبر السلف الصالح.">
+    <meta name="keywords" content="هايبر السلف الصالح, سوبر ماركت, بقالة, مواد غذائية, أعلاف, جملة, منتجات منزلية">
+    <meta name="author" content="بوابة السلف الصالح">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel=" icon " href="icon/Screenshot 2025-10-14 065110 (1).png ">
+
     <style>
-        .card-img-top {
-            height: 180px;
+        /* **إضافة CSS الناقص لثبات الأشرطة وإزاحة المحتوى** */
+        
+        .top-bar {
+            background-color: #3b7640;
+            color: #fff;
+            padding: 5px 0;
+            font-size: 0.9rem;
+            /* **تثبيت الشريط العلوي** */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1031;
+        }
+        
+        .top-bar .phone-link {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .engineer-profile {
+            height: 25px;
+            width: 25px;
             object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            margin-left: 5px;
+        }
+        
+        .engineer-info {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <div class="engineer-info">
+                <img src="imgs/318249797_1192375964964526_8841190463720610151_n.jpg" alt="صورة المهندس محمد" class="engineer-profile">
+                <span>مهندس محمد</span>
+            </div>
+
+            <div class="text-end">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+201001234567" class="phone-link me-2">للطلب والاستفسار: 01142279961</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="fas fa-store"></i> بقالة العمدة
+                <i class="fas fa-store"></i> هايبر السلف الصالح
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -57,10 +108,14 @@
 
     <main class="container py-5">
 
-        <h1 class="text-center mb-5 text-success border-bottom pb-2">🍚 قسم الحبوب والبقوليات</h1>
+        <h1 class="text-center mb-1 text-success border-bottom pb-2">🍚 قسم الحبوب والبقوليات</h1>
+        <p class="text-center lead text-danger fw-bold mb-5">
+            **الأسعار التالية هي أسعار جملة للمناديب والتجار**
+        </p>
+
 
         <section class="mb-5">
-            <h2 class="text-secondary mb-4 border-bottom pb-2"><i class="fas fa-seedling"></i> أصناف البقوليات المتوفرة</h2>
+            <h2 class="text-secondary mb-4 border-bottom pb-2"><i class="fas fa-box-open"></i> أسعار الجملة لأصناف البقوليات</h2>
             <div class="row row-cols-1 row-cols-md-4 g-4">
 
                 <div class="col">
@@ -69,7 +124,8 @@
                         <div class="card-body">
                             <h5 class="card-title text-success">أرز فاخر (جميع الأنواع)</h5>
                             <p class="card-text text-muted">رز حبة حبة ورز الهنا</p>
-                            <h4 class="text-primary">55 ج.م</h4>
+                            <p class="mb-0 text-dark">سعر الجملة:</p>
+                            <h4 class="wholesale-price">بالسعر المتفق عليه</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -77,11 +133,12 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/foul.jpg" class="card-img-top" alt="فول">
+                        <img src="imgs/الفول-البلدى-6.jpg" class="card-img-top" alt="فول">
                         <div class="card-body">
                             <h5 class="card-title text-success">فول بلدي وفول مكسور</h5>
                             <p class="card-text text-muted">لأشهى وجبات الإفطار</p>
-                            <h4 class="text-primary">35 ج.م</h4>
+                            <p class="mb-0 text-dark">سعر الجملة:</p>
+                            <h4 class="wholesale-price">حسب الكمية</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -89,11 +146,12 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/pasta.jpg" class="card-img-top" alt="مكرونة">
+                        <img src="imgs/Pasta_2006_3.jpg" class="card-img-top" alt="مكرونة">
                         <div class="card-body">
                             <h5 class="card-title text-success">مكرونة بجميع أنواعها</h5>
                             <p class="card-text text-muted">إسباجتي، قلم، خواتم، إلخ</p>
-                            <h4 class="text-primary">15 ج.م</h4>
+                            <p class="mb-0 text-dark">سعر الجملة:</p>
+                            <h4 class="wholesale-price">تواصل للمزيد</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -101,11 +159,12 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/lentils.jpg" class="card-img-top" alt="عدس">
+                        <img src="imgs/48536.jpeg" class="card-img-top" alt="عدس">
                         <div class="card-body">
                             <h5 class="card-title text-success">عدس (أصفر وبجبه)</h5>
                             <p class="card-text text-muted">جودة ممتازة</p>
-                            <h4 class="text-primary">45 ج.م</h4>
+                            <p class="mb-0 text-dark">سعر الجملة:</p>
+                            <h4 class="wholesale-price">بالسعر المتفق عليه</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -113,11 +172,12 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/lupin.jpg" class="card-img-top" alt="ترمس">
+                        <img src="imgs/8-4-2024_09_44_39_GomhuriaOnline_251712562279.jpg" class="card-img-top" alt="ترمس">
                         <div class="card-body">
                             <h5 class="card-title text-success">ترمس (سريع التحضير)</h5>
                             <p class="card-text text-muted">متاح حلو ومر</p>
-                            <h4 class="text-primary">50 ج.م</h4>
+                            <p class="mb-0 text-dark">سعر الجملة:</p>
+                            <h4 class="wholesale-price">حسب الكمية</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>
@@ -125,11 +185,12 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                        <img src="img/beans.jpg" class="card-img-top" alt="فاصوليا">
+                        <img src="imgs/white-beans-4.webp" class="card-img-top" alt="فاصوليا">
                         <div class="card-body">
                             <h5 class="card-title text-success">فاصوليا بيضاء</h5>
                             <p class="card-text text-muted">نقاوة وجودة عالية</p>
-                            <h4 class="text-primary">40 ج.م</h4>
+                            <p class="mb-0 text-dark">سعر الجملة:</p>
+                            <h4 class="wholesale-price">تواصل للمزيد</h4>
                             <a href="#" class="btn btn-warning">أضف للسلة</a>
                         </div>
                     </div>

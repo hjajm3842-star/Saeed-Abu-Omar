@@ -1,0 +1,27 @@
+{
+  "background_color": "#884444",
+  "description": "نهاية رحلة الإبداع والتطوير. شاهد ملخص أعمالي وتواصل لبدء مشروعك.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "محمد حجاج احمد",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "محمد حجاج",
+  "start_url": "/",
+  "theme_color": "#b27676",
+  "icons": [
+    {
+      "src": "https://hjajm3842-star.github.io/person-s-location/favicon.ico/318249797_1192375964964526_8841190463720610151_n.jpg",
+      "type": "image/png",
+      "sizes": "512x512",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": true,
+      "width": 512,
+      "is512x512": true,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ]
+}

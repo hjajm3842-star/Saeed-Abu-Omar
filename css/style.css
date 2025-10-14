@@ -1,0 +1,182 @@
+        .top-bar {
+            background-color: #3b7640;
+            color: #fff;
+            padding: 5px 0;
+            font-size: 0.9rem;
+            /* **تثبيت الشريط العلوي** */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1031;
+            /* قيمة أعلى من شريط التنقل */
+        }
+        
+        .navbar {
+            /* تحريك شريط التنقل لأسفل ليأتي بعد الشريط العلوي مباشرة */
+            top: 36px;
+        }
+        /* **2. تنسيق الصورة والنص في الشريط العلوي** */
+        
+        .top-bar .phone-link {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .engineer-profile {
+            height: 25px;
+            width: 25px;
+            object-fit: cover;
+            /* **جعل الصورة دائرية (بردر رديس 50%)** */
+            border-radius: 50%;
+            border: 1px solid #fff;
+            /* حدود بيضاء */
+            margin-left: 5px;
+        }
+        
+        .engineer-info {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        /* تنسيق لتحديد سعر الجملة بوضوح */
+        
+        .wholesale-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545 !important;
+            /* اللون الأحمر لجذب الانتباه */
+        }
+        
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        /* تنسيق سعر الجملة */
+        
+        .wholesale-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545 !important;
+            /* اللون الأحمر لجذب الانتباه */
+        }
+        
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        /* تنسيق سعر الجملة ليكون واضحًا ومميزًا */
+        
+        .wholesale-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545 !important;
+            /* اللون الأحمر لجذب الانتباه */
+        }
+        
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        /* تنسيق سعر الجملة ليكون واضحًا ومميزًا */
+        
+        .wholesale-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545 !important;
+            /* اللون الأحمر لجذب الانتباه */
+        }
+        
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        /* تنسيق سعر الجملة ليكون واضحًا ومميزًا */
+        
+        .wholesale-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545 !important;
+            /* اللون الأحمر لجذب الانتباه */
+        }
+        
+        .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        /* تنسيق سعر الجملة ليكون واضحًا ومميزًا */
+        
+        .wholesale-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545 !important;
+            /* اللون الأحمر لجذب الانتباه */
+        }
+        /* **إضافة CSS الشريط الإخباري (News Bar)** */
+        
+        .news-bar {
+            background-color: #dc3545;
+            /* لون أحمر جذاب للأخبار العاجلة */
+            color: #fff;
+            padding: 2px 0;
+            font-size: 0.85rem;
+            /* تثبيت الشريط الإخباري كأول شريط */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1040;
+            /* أعلى قيمة ليكون في المقدمة */
+        }
+        /* **تعديل الإزاحات لتجنب التداخل** */
+        /* **تعديل الـ Top Bar ليبدأ أسفل الشريط الإخباري** */
+        
+        .top-bar {
+            background-color: #3b7640;
+            color: #fff;
+            padding: 5px 0;
+            font-size: 0.9rem;
+            position: fixed;
+            /* يبدأ أسفل شريط الأخبار (إذا كان ارتفاعه 25px تقريباً) */
+            top: 25px;
+            left: 0;
+            right: 0;
+            z-index: 1031;
+        }
+        /* **تعديل الـ Navbar ليبدأ أسفل الـ Top Bar** */
+        
+        .navbar {
+            position: fixed;
+            /* يبدأ أسفل الـ Top Bar (إذا كان ارتفاعه 36px) + 25px News Bar = 61px تقريباً */
+            top: 35px;
+            z-index: 1030;
+            width: 100%;
+        }
+        /* باقي التنسيقات الأخرى كما هي */
+        
+        .top-bar .phone-link {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .engineer-profile {
+            height: 25px;
+            width: 25px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            margin-left: 5px;
+        }
+        
+        .engineer-info {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
