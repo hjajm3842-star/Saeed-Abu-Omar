@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="22m3jbe5Drffn8bC123n9VcOdva632s70AJdeSKmdBs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>هايبر السلف الصالح | جميع احتياجات البقالة والمنزل</title>
 
     <meta name="description" content="تسوق مواد البقالة، الخضروات، الأعلاف، ومستحضرات التجميل بأفضل أسعار الجملة في هايبر السلف الصالح.">
@@ -49,6 +49,98 @@
             display: flex;
             align-items: center;
             font-weight: bold;
+        }
+        
+        .card-img-circle {
+            width: 250px;
+            /* حجم الدائرة */
+            height: 250px;
+            /* حجم الدائرة */
+            object-fit: cover;
+            /* لضمان تغطية الصورة للمساحة دون تشوه */
+            border-radius: 50%;
+            /* لجعل الصورة دائرية */
+            display: block;
+            /* لكي تتمكن من استخدام margin: auto للتوسيط */
+            margin: 20px auto 0 auto;
+            /* توسيط الصورة العليا */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* ظل خفيف */
+        }
+        /* ستايل لجعل الفيديو يظهر بشكل أفضل داخل الكارد */
+        
+        .video-card-body {
+            padding: 0;
+        }
+        /* تعديل المسافات بين الأعمدة */
+        
+        .g-4 {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 1.5rem;
+        }
+        /* تعديل خاص لتبديل ترتيب الكروت ليناسب لقطة الشاشة المرفقة */
+        
+        @media (min-width: 992px) {
+            .contact-row {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+        /* --- الألوان لخلفية الكارد حول الصورة (التنسيقات القديمة) --- */
+        /* 1. كارد سعيد أبو عمر */
+        
+        .card-saeed {
+            background-color: #f0faff;
+            /* أزرق فاتح جداً */
+        }
+        
+        .card-saeed .card-img-circle {
+            border: 5px solid #0dcaf0;
+            /* حدود زرقاء فيروزية */
+        }
+        
+        .card-saeed .card-footer-info {
+            background-color: #0dcaf0;
+            color: white;
+            padding: 20px 10px;
+        }
+        /* 2. كارد التوك توك */
+        
+        .card-tuk-tuk {
+            background-color: #f5f5f5;
+            /* رمادي فاتح */
+        }
+        
+        .card-tuk-tuk .card-img-circle {
+            border: 5px solid #198754;
+            /* حدود خضراء */
+        }
+        
+        .card-tuk-tuk .card-header {
+            background-color: #343a40 !important;
+            /* أسود داكن */
+        }
+        /* 3. بطاقات الفيديو */
+        
+        .card-video-tour {
+            background-color: #f0f4ff;
+        }
+        
+        .card-video-offers {
+            background-color: #fff0f0;
+        }
+        
+        .card-video-tour .card-header {
+            border-bottom: 3px solid #0d6efd;
+        }
+        
+        .card-video-offers .card-header {
+            border-bottom: 3px solid #dc3545;
+        }
+        
+        .card-body {
+            background-color: transparent !important;
+            /* شفاف ليظهر لون الكارد الرئيسي */
         }
     </style>
 </head>
@@ -106,7 +198,7 @@
     </nav>
     <div style="height: 70px; "></div>
 
-    <main>
+    <main style="padding-top: 0px;">
         <section class="p-5 text-center bg-light ">
             <div class="container ">
                 <h1 class="display-4 text-success ">بقالة العمدة: كل احتياجات منزلك هنا</h1>
@@ -119,97 +211,98 @@
         <section class="py-5 bg-white ">
             <div class="container ">
                 <h2 class="text-center mb-5 text-success border-bottom pb-2 ">✨ فريق العمدة في خدمتكم ✨</h2>
-                <div class="row justify-content-center g-4 ">
-                    <div class="col-12 col-md-6 col-lg-4 ">
-                        <div class="card h-57 shadow-lg border-primary border-3 text-center ">
-                            <img src="imgs/Screenshot 2025-10-14 065110.png " class="card-img-top mx-auto mt-3 rounded-circle " alt="صورة سعيد أبو عمر " style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #198754; ">
-                            <div class="card-body d-flex flex-column justify-content-between ">
-                                <div>
-                                    <h5 class="card-title text-success ">سعيد أبو عمر</h5>
-                                    <p class="card-text text-muted mb-3 ">مؤسس وشريك - متخصص في الأصناف الجافة</p>
-                                </div>
+                <div class="row mb-5 justify-content-center g-4 contact-row">
 
-                                <button class="btn btn-outline-success mt-3 " type="button " data-bs-toggle="collapse " data-bs-target="#saeedContact " aria-expanded="false " aria-controls="saeedContact ">
-                                    <i class="fas fa-headset me-2 "></i> تواصل معنا
-                                </button>
+                    <div class="col-12 col-lg-6 order-lg-2">
+                        <div class="card shadow-lg border-0 h-100 card-saeed">
 
-                                <div class="collapse mt-3 " id="saeedContact ">
-                                    <div class="text-start p-2 bg-light rounded ">
-                                        <p class="mb-1 "><i class="fas fa-phone-alt text-primary me-2 "></i> 01128999149
-                                        </p>
-                                        <p class="mb-0 "><i class="fas fa-phone-alt text-primary me-2 "></i> 01012947670
-                                        </p>
+                            <img src="imgs/Screenshot 2025-10-14 065110.png" class="card-img-circle" alt="صورة سعيد أبو عمر">
+
+                            <div class="card-footer-info text-center pt-0">
+                                <h2 class="card-title mb-3 mt-4">سعيد أبو عمر</h2>
+                                <p class="card-text fs-5">للتواصل اضغط على الزر أدناه</p>
+
+                                <button class="btn btn-dark btn-lg mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#contactDetails" aria-expanded="false" aria-controls="contactDetails">
+                            <i class="fas fa-hand-point-down"></i> تواصل معنا
+                        </button>
+
+                                <div class="collapse mt-4" id="contactDetails">
+                                    <div class="card card-body bg-light text-dark">
+                                        <div class="d-grid gap-2 d-md-block mb-3">
+                                            <a href="tel:+201012345678" class="btn btn-warning btn-lg me-md-2" role="button">
+                                                <i class="fas fa-phone-alt"></i> اتصل بنا (01128999149)
+                                            </a>
+
+                                            <a href="tel:+201098765432" class="btn btn-danger btn-lg" role="button">
+                                                <i class="fas fa-money-bill-wave"></i> فودافون كاش (01012947670)
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 fw-bold text-success fs-5">لدينا جميع التحويلات وإنستا باي <i class="fas fa-wallet"></i></p>
                                     </div>
                                 </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <div class="card shadow-lg border-0 h-100 card-tuk-tuk">
+                            <div class="card-header text-center bg-dark text-white rounded-top-3">
+                                <h3 class="mb-0">توصيل البضائع بأمان وسرعة!</h3>
+                            </div>
+
+                            <img src="imgs/WhatsApp Image 2025-10-14 at 8.13.22 PM.jpeg" class="card-img-circle" alt="صورة تكتك توصيل البضائع">
+
+                            <div class="card-body text-center pt-0">
+                                <p class="card-text fs-5 mt-4">توصيل الطلبات إلى باب منزلك عبر خدمة التكتك السريعة.</p>
+                                <a href="tel:+201012345678" class="btn btn-success btn-lg mt-2">
+                            اطلب الآن <i class="fas fa-truck"></i>
+                        </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 ">
-                        <div class="card h-60 shadow-lg border-info border-3 text-center ">
-                            <i class="fas fa-truck-loading fa-5x text-info mt-4 mb-3 "></i>
-                            <div class="card-body d-flex flex-column justify-content-between ">
-                                <div>
-                                    <h5 class="card-title text-success ">خدمة توصيل البضاعة</h5>
-                                    <p class="card-text text-muted mb-3 ">توكتوك بقالة العمدة جاهز لخدمتكم!</p>
-                                </div>
-                                <div class="mt-3 ">
-                                    <img src="imgs/WhatsApp Image 2025-10-14 at 8.13.22 PM.jpeg " class="img-fluid rounded shadow " alt="صورة توكتوك توصيل البضاعة " style="max-height: 200px; object-fit: contain; ">
+                </div>
+
+                <div class="row mb-5 justify-content-center g-4">
+
+                    <div class="col-12 col-lg-6 order-lg-2">
+                        <div class="card shadow-lg border-0 h-100 card-video-tour">
+                            <div class="card-header text-center bg-primary text-white rounded-top-3">
+                                <h3 class="mb-0">شاهدنا: جولة سريعة في بقالة العمدة</h3>
+                            </div>
+                            <div class="card-body video-card-body p-0">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="w-100 rounded-bottom-3" controls>
+                                <source src="video/WhatsApp Video 2025-10-14 at 8.19.11 PM.mp4" type="video/mp4">
+                                متصفحك لا يدعم وسم الفيديو.
+                            </video>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 ">
-                        <div class="card h-100 shadow-lg border-success border-3 text-center ">
-                            <i class="fas fa-video fa-5x text-success mt-4 mb-3 "></i>
-                            <div class="card-body d-flex flex-column justify-content-between ">
-                                <div>
-                                    <h5 class="card-title text-success ">شاهد منتجاتنا</h5>
-                                    <p class="card-text text-muted mb-3 ">جولة سريعة في مجموعة منتجات بقالة العمدة.</p>
-                                </div>
-                                <div class="mt-3 ">
-                                    <video controls class="w-100 rounded shadow ">
-                                        <source src="video/WhatsApp Video 2025-10-14 at 8.19.11 PM.mp4 " type="video/mp4 ">
-                                        متصفحك لا يدعم عنصر الفيديو.
-                                    </video>
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <div class="card shadow-lg border-0 h-100 card-video-offers">
+                            <div class="card-header text-center bg-danger text-white rounded-top-3">
+                                <h3 class="mb-0">شاهد عروض خاصة من بقالة العمدة</h3>
+                            </div>
+                            <div class="card-body video-card-body p-0">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="w-100 rounded-bottom-3" controls>
+                                <source src="video/تنزيل.mp4" type="video/mp4">
+                                متصفحك لا يدعموسم الفيديو.
+                            </video>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
+
             </div>
-        </section>
-
-
-        <footer class="bg-dark text-white p-4 mt-5 ">
-            <div class="container text-center ">
-                <p>&copy; 2024 بقالة العمدة. جميع الحقوق محفوظة.</p>
-            </div>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
-
-        <script>
-            // كود الجافاسكريبت لتحديد الرابط النشط في شريط التنقل
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-            const currentPath = window.location.pathname.split('/').pop();
-
-            navLinks.forEach(link => {
-                if (link.href) {
-                    const targetPath = link.href.split('/').pop();
-                    const isHomePage = (targetPath === 'index.html' && (currentPath === '' || currentPath === 'index.html'));
-
-                    if (targetPath === currentPath || isHomePage) {
-                        navLinks.forEach(otherLink => otherLink.classList.remove('active'));
-                        link.classList.add('active');
-                        link.setAttribute('aria-current', 'page');
-                    }
-                }
-            });
-        </script>
-    </main>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
